@@ -1,0 +1,262 @@
+body{
+    overflow-x:hidden;
+
+}
+header{
+    position:fixed;
+    top:0px;
+    right:0px;
+    width:30%;
+    height:100vh;
+    z-index:100;
+}
+.navbar{
+    width:90%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    right:-600px;
+    background:#eee;
+    transition:all 1s;
+}
+.change{
+    right:-100px;
+}
+.hamburger-menu{
+    width:35px;
+    height:30px;
+    position:fixed;
+    top:25px;
+    right:50px;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.line{
+    width:100%;
+    height:3px;
+    background:#262626;
+    transition:all 1s;
+}
+
+.change .line-1{
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+.change .line-2{
+    opacity:0;
+}
+.change .line-3{
+    transform:rotateZ(405deg) translate(-8px, -6px);
+}
+
+ul li{
+    list-style: none;
+    margin-bottom:60px;
+}
+ul li > a{
+    text-decoration:none;
+    color:#262626;
+    font-size:25px;
+}
+
+
+/*sesion 1*/
+.sesion1{
+    background:#eee;
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
+.sesion1__content h1{
+    animation-name:img;
+    animation-duration:2s;
+    animation-iteration-count:1;
+
+}
+.sesion1__content p{
+
+    animation-name:img;
+    animation-duration:3s;
+    animation-iteration-count:1;
+}
+.sesion1__content{
+    background:#eee;
+    width:50%;
+    padding:0px 50px;
+    font-size:20px;
+    
+}
+#sesion1__img1{
+    width:700px;
+    position:absolute;
+    right:25px;
+    animation-name:img;
+    animation-duration:2s;
+    animation-iteration-count:1;
+}
+#sesion1__a{
+    background:#CD6155 ;
+    color:#eee;
+    width:220px;
+    display:flex;
+    justify-content:center;
+    transition:all 1s;
+    animation-name:img;
+    animation-duration:4s;
+    animation-iteration-count:1;
+
+}
+#sesion1__a::before{
+    content:"";
+    display:block;
+    background:rgba(0, 0, 0, 0.15);
+    width:25px;
+    height:25px;
+    position:absolute;
+    border-radius:10em;
+    transition:all 1s;
+    opacity:0;
+    
+}
+#sesion1__a:hover::before{
+    width:220px;
+    height:38px;
+    margin-top:-6px;
+    border-radius:5px;
+    opacity:unset;
+}
+#sesion1__a:hover{
+    box-shadow:1px 1px 5px 2px rgba(0,0,0,.5);
+}
+
+@keyframes img{
+    0%{
+        opacity:0;
+        transform:translatey(200px);
+    }
+}
+
+
+
+/*sesion2*/
+#sesion2__title h3{
+    font-size:50px;
+}
+.sesion2{
+    padding-top:70px;
+}
+.services{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3, 150px);
+    grid-column-gap:300px;
+    grid-row-gap:50px;
+    justify-content:center;
+    padding-right:240px;
+}
+.service1{
+    width:400px;
+    box-shadow:1px 1px 6px 3px rgba(0,0,0,.3);
+    padding:15px 20px;
+    transition:all 1s;
+}
+
+
+#services__img1{
+    width:100px;
+    margin-bottom:30px;
+}
+
+::-webkit-scrollbar{
+    background:#eee;
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background:#262626;
+    border-radius:10px;
+}
+
+
+/*atile 2*/
+.sesion2__artilce2{
+    padding-top:40px;
+    height:100vh;
+    display:flex;
+    align-items: center;
+}
+.artilce2__content{
+    width:50%;
+    padding:20px 20px;
+    position:absolute;
+    right:0px;
+ 
+}
+#ranti{
+    padding:10px 10px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    justify-content:space-around;
+    margin-top:20px;
+}
+#ranti > span{
+    padding:30px 20px;
+    font-size:18px;
+    box-sizing:border-box;
+    color:#eee;
+    margin-right:10px;
+}
+#span{
+    border-right:4px solid#eee;
+
+}
+.bxs-star{
+    color: #F1C40F;
+    text-shadow:1px 2px 1px rgba(0,0,0,.3);
+    font-size:18px;
+}
+
+#artile__img{
+    width:650px;
+}
+
+
+
+/*sesion 3*/
+.sesion2__artilce3{
+    height:100vh;
+    display:flex;
+    align-items: center;
+}
+
+.artilce3__content{
+    width:47%;
+    margin-left:50px;
+    font-size:22px;
+
+}
+
+#artile3__img{
+    width:825px;
+    position:absolute;
+    right:5px;
+}
+footer{
+    display:flex;
+    justify-content:center;
+    justify-content:space-around;
+    padding-top:10px;
+
+}
+.footer__content1{
+    color:#eee;
+    width:300px;
+    padding:10px 0px;
+}
+
+footer ul li > a{
+    color:#eee;
+    font-size:20px;
+}
